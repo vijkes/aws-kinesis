@@ -1,0 +1,11 @@
+aws kinesis describe-stream help
+aws kinesis describe-stream --stream-name newDataStreamVK
+aws kinesis put-data --help
+aws kinesis put-record --partition-key purchased
+aws kinesis put-record --stream-name newDataStreamVK --partition-key sold --data "chicken_biryani" --cli-binary-format raw-in-base64-out
+aws kinesis describe-stream --stream-name newDataStream2
+aws kinesis get-shard-iterator --stream-name newDataStream2 --shard-id shardId-00000000000
+aws kinesis get-shard-iterator --stream-name newDataStream2 --shard-id shardId-00000000000 --shard-iterator-type TRIM_HORIZON
+aws kinesis get-records --shard-iterator AAAAAAAAAAG2qYowcM4T1NfF2NzD6++MFJTLPGyyi8hXGUdHgOyisY9s3OgEqzduwqW1VTWm7xvL1J3CbQPtxFKJ9Wm2QEIgLptZ3qg6+0LM90RA2ivqydSYLdw/NdqcTx cWZY8+KifR4XjFhjR1tPRK9gKdLzBwQTmo8jYvq07mFpSO5vb54dzLWrT3DZUquAaNPp1apxgg8Oqxyyp3SmFuZ+KIFKxqndg+t1YPmGjg8wWRXdAgQ==
+
+base 64 encoder
